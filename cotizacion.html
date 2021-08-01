@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <section class="form-register">
+    <h4 class="labels">Registro de clientes</h4>
+
+    <!--codigo de nombre-->
+    <div>
+    <label>Nombre del cliente:</label>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre:">
+  </div>
+
+    <!--Codigo de marca de la computadora (select)-->
+    <div>
+    <label>Marca de la computadora:</label>
+    <select class="controls">
+        <option>Elija la marca: </option>
+        <option>Mac</option>
+        <option>HP</option>
+        <option>Dell</option>
+        <option>Lenovo</option>
+        <option>Acer</option>
+      </select>
+    </div>
+
+    <!--Codigo de modelo de computadora-->
+    <div>
+      <label>Modelo de la computadora:</label>
+    <input class="controls" type="email" name="modelo" id="modelo" placeholder="Ingrese el Modelo:">
+    </div>
+
+    <!--Codigo de tipo de computadoras (select)-->
+    <div>
+    <label>Tipo de computadora:</label>
+    <select class="controls">
+        <option>Elija el Tipo: </option>
+        <option>Escritorio</option>
+        <option>Laptop</option>
+        <option>Mini laptop</option>
+      </select>
+    </div>
+
+      <!--Codigo de fecha-->
+      <div>
+      <label for="start">Fecha de entrega:</label>
+    <input class="controls" type="date" id="start" name="trip-start" placeholder="Ingrese la fecha:"
+       value="2021-07-21"
+       min="2021-07-01" max="2023-12-31">
+      </div>
+
+      <!--Codigo de falla del equipo -->
+      <div>
+        <label>Explique la falla del equipo:</label>
+        <textarea class="controls" placeholder="Especifique la falla"></textarea>
+           </div>
+
+    <input class="botons" type="submit" value="Registrar">
+  </section>
+</body>
+</html>

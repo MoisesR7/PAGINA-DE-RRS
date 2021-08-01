@@ -1,0 +1,217 @@
+/*Archivo css de los estilos de la pagina web
+Equipo de la sala 4
+REYES PEÑA MOISES ALBERTO
+RODRIGUEZ MONTIEL LUIS JESUS
+JIMENEZ  JOSE ROBERTO
+10 de Julio del 2021
+*/
+
+
+
+h1{
+	width: 10px;
+	color: white;
+	font-size:50px;
+	margin: 160px 100px;
+
+}
+h2{
+	color: slategray;
+	margin:  auto 100px;
+}
+
+div{
+
+	witdth: 100%;/* ancho de la caja*/
+	/* margin nos permite editar el margen de separación alrededor */
+}
+
+/*Definición de las clases de los iconos de las redes sociales
+
+Por Moises
+Se crearon las clases icon-redsocial para agregarles el fondo, partiendo y teniendo todas herencia de la clase icon
+
+
+
+*/
+.social-bar{
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+
+.icon{
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+
+.icon-facebook{
+	background: #2E406E;
+}
+.icon-twitter{
+	background: #339DC5;
+}
+
+.icon-youtube{
+	background: #E83028;
+}
+
+.icon-instagram{
+	/*background: #3F60A5;*/
+	background: #F3215C;
+	
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0; ;
+}
+
+.icon:last-child{
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover{
+	padding-right: 3rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/*CLASE DE SCC PARA AJUSTAR LAS IMAGENES SI LA PESTAÑA SE REDUCE*/
+.ajuste img {
+
+  max-width: 100%;
+  margin: auto;
+
+}
+
+/*CLASE CONTENEDOR, permite el ajuste de la pagina web a distintas reaoluciones
+.contenedor{
+			width: 90%;
+			/*width: 120rem;
+			margin: auto;
+
+	    }
+
+*/
+
+.contenedor{
+	width: 120rem;
+	margin: auto;
+}
+/*CLASE QUE CONFIGURA LA BARRA PRINCIPAL*/
+
+.nav-bg{
+	    	background-color: #000000;
+
+	    }
+
+.navegacion-principal{
+
+	    	display: flex;
+	    	flex-direction: row;
+	    	align-items: center;
+	    	justify-content: center;
+
+	    }
+
+.navegacion-principal a{
+        	display: block;
+        	text-align: center;
+	        color: white;
+	        text-decoration: none;
+	        font-size: 2rem;
+	        font-weight: bold;
+	        padding:1rem;
+        }
+
+/*ASIGNACIÓN DEL COLOR AL SELECCIONAR EL MENU DE LA BARRA DE OPCIONES*/ 
+.navegacion-principal a:hover{
+			background-color: #DCDCDC;
+			/*background-color: inherit;*/
+			color: white;
+ }
+
+
+/* CLASES DE LOS FONDOS DE LAS PAGINAS */
+.fondoprincipal{
+        	background-image: url(FondoP.jpg);
+        	background-repeat: no-repeat;
+        	background-size: cover;
+        	height: 550px;
+        	padding: 100px;
+        	position: relative;
+        }
+
+
+.fondoseccion1{
+
+	background-image: url(Fondo2.jpg);
+        	background-repeat: no-repeat;
+        	background-size: cover;
+        	height: 550px;
+        	padding: 100px;
+        	position: relative;
+}
+
+/*Clase para el color y el fondo del login*/
+.login-bg{
+	background-image: url(RRSf.png);
+	background-repeat: no-repeat;
+        	background-size: cover;
+        	height: 500%;
+        	padding: 100px;
+        	position: relative;
+}
+/*CLASE LOGIN-FORM FORMATO DE AJUSTE DE LA CLASE*/
+.login-form{
+		/*background: ThreeDDarkShadow;*/
+		margin: 350px auto;
+		position: relative;
+
+}
+
+label{
+	color: white;
+}
+
+/*PARTE DEL CODIGO CLASE QUE DEFINEN EL SOMBREADO DE LOS ICONOS EN EL APARTADO DE SERVICIOS*/
+ .servicio .iconos{
+        height: 15rem;
+        width: 15rem;
+        background-color: var(--primario);
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .sombra{
+        		-webkit-box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+                background-color: var white;
+                padding: 1rem;
+                border-radius: 1rem;
+                margin-top: 5rem;
+
+        	}
+
+  @media (min-width: 780px){
+
+        .servicios{
+            display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 2rem;
+
+        }
+    }
