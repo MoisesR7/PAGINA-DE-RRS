@@ -1,0 +1,51 @@
+body {
+background: black;
+}
+.header {
+    text-align: center;
+    color: white;
+}
+@media (min-width: 768px) {
+    .contenedor {
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: repeat(2, 1fr);
+    } 
+}
+.img {
+  margin-left: 60px; 
+  margin-right: 10px;
+}
+  .contenedor .img {
+    background-image: url(../img/ima.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center; 
+}
+
+    @media (min-width: 768px) {
+      .contenedor .img {
+        height: auto; 
+    } 
+}
+        .servicios {
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 2.5rem; 
+        }
+        .botones {
+          box-sizing: content-box;
+          width: 90%;
+          font-style: oblique;
+          background-color: black;
+          color: white;
+          text-decoration: none;
+          padding: 10px;
+          font-size: 1rem;
+          border-radius: 2px;
+          border: 1px solid 	#FFD700;
+          text-align: center;
+        }
+        .botones:hover {
+          background-color: gold;
+          cursor: pointer;
+        }
