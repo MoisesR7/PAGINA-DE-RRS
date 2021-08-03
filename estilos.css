@@ -216,8 +216,16 @@ label{
         }
     }
 
-
+/*EDIT DE FORMULARIO CONTACTANOS*/ 
 .colorcontact{
 	background-color:#000000;
 	align-items: center;
+	justify-content: center;
+}
+
+h5{
+	width: 10px;
+	color: white;
+	font-size:50px;
+	margin: auto;
 }
