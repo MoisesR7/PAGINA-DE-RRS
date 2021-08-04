@@ -247,3 +247,10 @@ h5{
     background-repeat: no-repeat; 
     background-position: center center; 
 }
+
+
+.posicion32{
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 2.5rem; 
+        }
