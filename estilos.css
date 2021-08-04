@@ -227,3 +227,23 @@ h5{
 	font-size:50px;
 	margin: auto;
 }
+
+/*Edit de index de acerca de la empresa 03 de agosto del 2021*/
+
+}
+@media (min-width: 768px) {
+    .contenedor1 {
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: repeat(2, 1fr);
+    } 
+}
+.img32 {
+  margin-left: 60px; 
+  margin-right: 10px;
+}
+  .contenedor1 .img32 {
+    background-image: url(Company.png);
+    background-repeat: no-repeat; 
+    background-position: center center; 
+}
